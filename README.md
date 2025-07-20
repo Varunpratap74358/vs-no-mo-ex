@@ -13,7 +13,8 @@ Quickly bootstrap an Express.js + MongoDB server with CORS support using a singl
 
 
 
-## 📦 Installation
+
+## 📦 Installation And UseCase
 
 ```bash
 npm install vs-nomoex
@@ -30,10 +31,11 @@ import {nomoex} from "vs-nomoex"
 ```bash
 nomoex(mongoUrl);
 
-
+#******************************OR**********************************#
 
 nomoex("mongodb://localhost:27017/myApp", 5200, "http://localhost:5173");
 
+#*****************************************************************#
 
 The nomoex function takes up to three parameters. The first parameter is required, while the other two are optional and come with default values.
 
@@ -41,6 +43,6 @@ The first parameter is the MongoDB connection URL, which is mandatory. This is t
 
 The second parameter is the port number on which the Express.js server will run. If you don’t provide it, the server will automatically run on port 5200.
 
-The third parameter is the CORS origin, which defines which frontend URLs are allowed to access your backend. By default, it is set to true, meaning all origins are allowed. You can pass a specific origin string like "http://localhost:3000" to allow only that frontend.
+The third parameter is the CORS origin, which defines which frontend URLs are allowed to access your backend. By default, it is set to true, meaning all origins are allowed. You can pass a specific origin string like "http://localhost:5173" to allow only that frontend.
 
 ```

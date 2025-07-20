@@ -221,11 +221,11 @@ import {nomoex} from "vs-nomoex"
 ```bash
 nomoex(mongoUrl);
 
-********************OR***************************
+#******************************OR**********************************#
 
 nomoex("mongodb://localhost:27017/myApp", 5200, "http://localhost:5173");
 
-*************************************************
+#*****************************************************************#
 
 The nomoex function takes up to three parameters. The first parameter is required, while the other two are optional and come with default values.
 
