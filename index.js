@@ -21,4 +21,4 @@ export const nomoex = (mongoUrl, port = 5200, corsOrigin = true) => {
     .catch((err) => console.log(err));
 };
 
-nomoex("mongodb://localhost:27017/NPM-NOMOEX");
+// nomoex("mongodb://localhost:27017/NPM-NOMOEX");
