@@ -29,7 +29,7 @@ import {nomoex} from "vs-nomoex"
 ```
 
 ```bash
-nomoex(mongoUrl);
+nomoex("Your Mongo URL");
 
 #******************************OR**********************************#
 
