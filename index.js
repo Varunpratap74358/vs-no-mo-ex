@@ -4,7 +4,7 @@ import express from "express";
 
 const app = express();
 
-export const nomoex = (mongoUrl, port = 5200, corsOrigin = true) => {
+export const nomoex = (mongoUrl, corsOrigin = true) => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(
@@ -14,11 +14,12 @@ export const nomoex = (mongoUrl, port = 5200, corsOrigin = true) => {
       credentials: true,
     })
   );
-  app.listen(port, () => console.log(`Server is running on Port ${port}`));
+  
   mongoose
     .connect(mongoUrl)
     .then(() => console.log("DB is connected ✔"))
     .catch((err) => console.log(err));
 };
 
-// nomoex("mongodb://localhost:27017/NPM-NOMOEX");
+
+// app.listen(5200, () => console.log(`Server is running on Port ${5200}`));
